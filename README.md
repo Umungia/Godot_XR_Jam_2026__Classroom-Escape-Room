@@ -188,3 +188,14 @@ After playing, we suggest discussing three questions with students:
 3. What would change if factoring n were infeasible with the available resources?
 
 The goal is for students to explain why they chose each machine and how its result contributes to the next step.
+
+## Full gameplay video (spoilers)
+
+> **⚠️ Spoiler alert:** This video shows a complete playthrough of the game, including all puzzle solutions and the ending. Watch it after playing if you want to discover the escape room for yourself.
+
+<details>
+<summary>Reveal the full gameplay video — major spoilers</summary>
+
+[Watch or download the full gameplay video](Spoiler/classroom-escape-room-compressed.webm)
+
+</details>
