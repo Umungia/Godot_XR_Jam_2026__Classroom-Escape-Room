@@ -242,7 +242,7 @@ font_size = 44
 outline_size = 4
 
 [node name="InspectionMessage" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D" index="2" unique_id=1285626280]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, -1.6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.005524397, -1.6)
 visible = false
 cast_shadow = 0
 mesh = SubResource("QuadMesh_inspection")
@@ -354,11 +354,11 @@ crouch_button_action = "ax_button"
 [node name="PlayerBody" parent="XROrigin3D" index="3" unique_id=641213541 instance=ExtResource("7_xmli6")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/PlayerBody" index="0" unique_id=516688720]
-transform = Transform3D(1.630858, 0, 0, 0, 1.0309955, -1.1979442, 0, 1.0309955, 1.1979442, 0.37541646, 0.7099302, -0.42197275)
+transform = Transform3D(1.630858, 0, 0, 0, 1.0309955, -1.1979442, 0, 1.0309955, 1.1979442, 0.017817438, 0.56012374, -0.29561162)
 mesh = SubResource("SphereMesh_vuu18")
 
 [node name="SnapZone" parent="XROrigin3D/PlayerBody/MeshInstance3D" index="0" unique_id=1439304274 instance=ExtResource("8_y8owq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024620593, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0005627824, 0, 0)
 stash_sound = ExtResource("25_usb_stash")
 snap_require = "Cube"
 
@@ -408,6 +408,7 @@ mesh = SubResource("BoxMesh_nt2f6")
 
 [node name="workstation2" parent="." index="9" unique_id=475807430 instance=ExtResource("14_l7gkf")]
 transform = Transform3D(-5.4639237e-08, 0, 1.25, 0, 1.25, 0, -1.25, 0, -5.4639237e-08, -6.959401, 1, 5.024315)
+metadata/_edit_group_ = true
 
 [node name="workstation3" parent="." index="10" unique_id=2038541487 instance=ExtResource("14_l7gkf")]
 transform = Transform3D(-5.4639237e-08, 0, -1.25, 0, 1.25, 0, 1.25, 0, -5.4639237e-08, 7.0566697, 1, 3.8837228)

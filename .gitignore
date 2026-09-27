@@ -1,0 +1,15 @@
+# Android export packages.
+*.apk
+*.apk.idsig
+*.aab
+
+# Generated Android build output, Gradle cache, and exported project assets.
+/android/build/.gradle/
+/android/build/build/
+/android/build/src/main/assets/
+/android/build/assetPackInstallTime/build/
+/android/build/assetPackInstallTime/src/main/assets/
+
+# Local Godot Android libraries installed with the export templates.
+/android/build/libs/debug/godot-lib.template_debug.aar
+/android/build/libs/release/godot-lib.template_release.aar
