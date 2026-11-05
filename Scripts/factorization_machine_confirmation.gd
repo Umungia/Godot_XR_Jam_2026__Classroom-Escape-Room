@@ -1,30 +1,80 @@
 extends Node3D
 signal completed
 
-var isDone: bool = false
+enum Phase { Q1, Q2, DONE }
+var isDone :=false
+var phase: Phase = Phase.Q1
+var inserted := false
+var first_completion := true
+var numb := 1
+var can_press := true  # <--- Nueva variable para controlar el delay
+
 @onready var game_controller = get_node("../GameController")
-@onready var  isDoneIndicator= get_node("/root/MainStaging/Scene/TestScene/StaticBody3D2")
+@onready var is_done_indicator = get_node("/root/MainStaging/Scene/TestScene/StaticBody3D2")
 @onready var room = get_node("../Room")
 @onready var table_material: BaseMaterial3D = get_node("../Node3D2/StaticBody3D/MeshInstance3D").get_active_material(0)
+@onready var face_on = $SnapTree/instruction_panel2/instruction_panel/instruction_faceOn
+@onready var face_on2 = $SnapTree/instruction_panel2/instruction_panel/instruction_faceOn2
+@onready var face = $SnapTree/instruction_panel2/instruction_panel/instruction_face
 
 func _ready() -> void:
 	$SnapTree/SnapZone.has_picked_up.connect(_on_snap_tree_picked_up)
 	$SnapTree/SnapZone.has_dropped.connect(_on_snap_tree_dropped)
+
+	for letter in ["A)", "B)", "C)"]:
+		var button = get_node("/root/MainStaging/Scene/TestScene/%s/InteractableAreaButton" % letter)
+		button.button_pressed.connect(_on_button_pressed)
+
+func _on_button_pressed(button) -> void:
+	# Si no está insertado o estamos en plena espera (delay), ignoramos la pulsación
+	if not inserted or not can_press:
+		return
+
+	# Activamos el bloqueo inmediatamente
+	can_press = false
 	
-func _on_snap_tree_picked_up(_what):
+	# Creamos un temporizador de 0.5 segundos para volver a permitir pulsaciones
+	get_tree().create_timer(0.5).timeout.connect(func(): can_press = true)
+
+	var button_letter = button.get_parent().name
+	match numb:
+		1:
+			match phase:
+				Phase.Q1:
+					if button_letter == "A)":
+						face_on.visible = false
+						face_on2.visible = true
+						phase = Phase.Q2
+				Phase.Q2:
+					if button_letter == "B)":
+						face.visible = true
+						face_on2.visible = false
+						phase = Phase.DONE
+						_complete()
+					else:
+						phase = Phase.Q1
+						face_on.visible = true
+						face_on2.visible = false
+		2, 3:
+			pass # pendiente
+
+func _complete() -> void:
+	if not first_completion:
+		return
+	first_completion = false
+	room.set_lamp_color(table_material.albedo_color)
+	is_done_indicator.visible = true
+	completed.emit()
+
+func _on_snap_tree_picked_up(_what) -> void:
+	inserted = true
 	if not game_controller.is_playing():
 		return
-	var first_completion := not isDone
-	if first_completion:
-		room.set_lamp_color(table_material.albedo_color)
-	isDone = true
-	isDoneIndicator.visible=true
-	$SnapTree/instruction_panel2/instruction_panel/instruction_faceOn.visible = true
-	$SnapTree/instruction_panel2/instruction_panel/instruction_face.visible = false
-	if first_completion:
-		completed.emit()
+	face_on.visible = true
+	face.visible = false
 
-func _on_snap_tree_dropped():
-		$SnapTree/instruction_panel2/instruction_panel/instruction_faceOn.visible = false
-		$SnapTree/instruction_panel2/instruction_panel/instruction_face.visible = true
-	
+func _on_snap_tree_dropped() -> void:
+	inserted = false
+	face_on2.visible = false
+	face_on.visible = false
+	face.visible = true
