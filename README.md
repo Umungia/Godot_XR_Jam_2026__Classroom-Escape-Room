@@ -177,6 +177,14 @@ Some images used in the game, mainly the **blackboard textures**, were generated
 
 The team remains responsible for design decisions, content review, and the final result. This statement describes our use so far and will be updated if it changes during development.
 
+## Localization
+
+The nine machine-name and gameplay-message translations are maintained in [Localization/translations.csv](Localization/translations.csv), with `en` (English), `es` (Spanish), and `eu` (Basque) columns. Edit this file in a spreadsheet and save it as comma-separated UTF-8 CSV. Keep the translation keys, line breaks inside cells, and the warning message's `%d` countdown placeholder. Godot imports the CSV into the three `.translation` resources registered under **Project Settings > Localization > Translations**; those generated resources should not be edited directly.
+
+For debug runs, [Scripts/Localization.gd](Scripts/Localization.gd) calls `TranslationServer.set_locale("eu")` before the game scene loads. Change `"eu"` to `"es"` or `"en"` and run again to test another language. English is the fallback. There is no language selector yet. Blackboard and note images, splash-screen artwork, the image-based startup prompt, narration, and mathematical notation remain shared.
+
+All translations use the original number of lines. Message panels retain their existing dimensions and font sizes; the nameplates use font sizes 58 (two lines) and 38 (three lines) to fit their existing faces in all three languages.
+
 ## Classroom use
 
 After playing, we suggest discussing three questions with students:

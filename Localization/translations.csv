@@ -1,0 +1,76 @@
+keys,en,es,eu
+MACHINE_FACTORIZATION,"Factorization
+Machine","Máquina de
+factorización","Faktorizazio
+makina"
+MACHINE_PHI,"Phi calculation
+Machine","Máquina de
+cálculo de phi","Phi kalkulatzeko
+makina"
+MACHINE_INVERSE,"Modular inverse
+Machine","Máquina de
+inversa modular","Alderantzizko
+modularra"
+MACHINE_EXPONENTIATION,"Modular
+exponentiation
+Machine","Máquina de
+exponenciación
+modular","Berreketa
+modularreko
+makina"
+GAME_OVER,"TIME'S UP!
+
+The professor is back.
+You are still doing algebra.
+
+Press A to try again.","¡SE ACABÓ EL TIEMPO!
+
+Ha vuelto el profesor.
+Sigues haciendo álgebra.
+
+Pulsa A para reintentarlo.","DENBORA AMAITU DA!
+
+Irakaslea itzuli da.
+Aljebran jarraitzen duzu.
+
+Sakatu A berriro saiatzeko."
+GAME_WON,"YOU WIN!
+
+USB decrypted.
+Exam answers acquired.
+
+Press A to play again.","¡HAS GANADO!
+
+USB descifrado.
+Respuestas del examen listas.
+
+Pulsa A para jugar otra vez.","IRABAZI DUZU!
+
+USBa deszifratu duzu.
+Azterketako erantzunak dituzu.
+
+Sakatu A berriro jokatzeko."
+INSPECTION_WARNING,"PROFESSOR APPROACHING - %d
+Hide the USB in your belt!
+Look academically innocent.
+Caught = -3:00","SE ACERCA EL PROFESOR - %d
+¡Guarda el USB en el cinturón!
+Finge que estás estudiando.
+Si te pillan: -3:00","IRAKASLEA DATOR - %d
+Gorde USBa gerrikoan!
+Plantak egiteko momentua.
+Harrapatuz gero: -3:00"
+INSPECTION_PASSED,"INSPECTION PASSED
+Suspiciously studious.
+You may resume your research.","INSPECCIÓN SUPERADA
+Sospechosamente aplicado.
+Puedes seguir investigando.","IKUSKAPENA GAINDITUTA
+Susmagarriki arduratsua.
+Jarraitu zure ikerketarekin."
+INSPECTION_CAUGHT,"CAUGHT BORROWING!
+-3:00
+The professor is keeping an eye on you.","¡TE HAN PILLADO!
+-3:00
+El profesor te vigila.","HARRAPATU ZAITUZTE!
+-3:00
+Irakaslea zuri begira dago."

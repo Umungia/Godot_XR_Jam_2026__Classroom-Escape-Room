@@ -293,12 +293,7 @@ no_depth_test = true
 render_priority = 101
 outline_render_priority = 100
 modulate = Color(0.96, 0.96, 0.88, 1)
-text = "TIME'S UP!
-
-The professor is back.
-You are still doing algebra.
-
-Press A to try again."
+text = "GAME_OVER"
 font_size = 44
 outline_size = 4
 
@@ -315,12 +310,7 @@ no_depth_test = true
 render_priority = 101
 outline_render_priority = 100
 modulate = Color(0.96, 0.96, 0.88, 1)
-text = "YOU WIN!
-
-USB decrypted.
-Exam answers acquired.
-
-Press A to play again."
+text = "GAME_WON"
 font_size = 44
 outline_size = 4
 
@@ -336,10 +326,7 @@ pixel_size = 0.0018
 no_depth_test = true
 render_priority = 98
 outline_render_priority = 97
-text = "PROFESSOR APPROACHING - 12
-Hide the USB in your belt!
-Look academically innocent.
-Caught = -3:00"
+text = "INSPECTION_WARNING"
 font_size = 40
 outline_size = 4
 
@@ -662,27 +649,24 @@ transform = Transform3D(0.027911993, 0, 1.5220288, 0, 5.0691705, 0, 5.0904803, 0
 
 [node name="Label3D" type="Label3D" parent="machine_nameplate2" index="1" unique_id=1632619548]
 transform = Transform3D(-0.095966995, 7.946967e-26, 0.00097208354, -3.524741e-38, 0.08713534, -2.9738848e-23, 0.0017598935, 4.8474023e-23, 0.5929407, 0.0061018467, 0.051121548, 0.017215729)
-text = "Factorization
-Machine"
-font_size = 70
+text = "MACHINE_FACTORIZATION"
+font_size = 58
 
 [node name="machine_nameplate3" parent="." index="32" unique_id=232650989 instance=ExtResource("24_ar2pj")]
 transform = Transform3D(-5.09048, 0, 0.0083454745, 0, 5.0691705, 0, 0.027911764, 0, 1.5220287, 0.020397827, 0.22791171, -4.063096)
 
 [node name="Label3D" type="Label3D" parent="machine_nameplate3" index="1" unique_id=1108077149]
 transform = Transform3D(-0.095966995, 7.946967e-26, 0.00097208354, -3.524741e-38, 0.08713534, -2.9738848e-23, 0.0017598935, 4.8474023e-23, 0.5929407, 0.0061018467, 0.051121548, 0.017215729)
-text = "Phi calculation
-Machine"
-font_size = 70
+text = "MACHINE_PHI"
+font_size = 58
 
 [node name="machine_nameplate4" parent="." index="33" unique_id=1077052089 instance=ExtResource("24_ar2pj")]
 transform = Transform3D(-0.02791154, 0, -1.5220284, 0, 5.06917, 0, -5.090479, 0, 0.0083454065, 6.2058864, 0.22791171, 4.422591)
 
 [node name="Label3D" type="Label3D" parent="machine_nameplate4" index="1" unique_id=1586304492]
 transform = Transform3D(-0.095966995, 7.946967e-26, 0.00097208354, -3.524741e-38, 0.08713534, -2.9738848e-23, 0.0017598935, 4.8474023e-23, 0.5929407, 0.0061018467, 0.051121548, 0.017215729)
-text = "Modular inverse
-Machine"
-font_size = 70
+text = "MACHINE_INVERSE"
+font_size = 58
 
 [node name="RSAClueBlackboard" parent="." index="34" unique_id=1744607865 instance=ExtResource("26_clue_board")]
 transform = Transform3D(-1.6805184, 0, -8.742278e-08, 0, 1.6281446, 0, 1.469156e-07, 0, -1, 2.0418794, 0, 7.547947)
@@ -696,17 +680,8 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.58
 [node name="ModularExponentiationStation" parent="." index="37" unique_id=1757018394 instance=ExtResource("30_exponentiation_station")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.063, 0, -2.513)
 
-[node name="Table" parent="ModularExponentiationStation" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-
-[node name="MeshInstance3D" parent="ModularExponentiationStation/Table/StaticBody3D" index="1" unique_id=976085782]
-transform = Transform3D(2.9135911, 0, 0, 0, 1, 0, 0, 0, 1, 0.019564152, 0, 0)
-
 [node name="Machine" parent="ModularExponentiationStation" index="2"]
 visible = false
-
-[node name="Nameplate" parent="ModularExponentiationStation" index="3"]
-transform = Transform3D(0.027911993, 0, 1.5220288, 0, 5.0691705, 0, 5.0904803, 0, -0.008345542, 0.98638725, 0.2683195, -0.047431946)
 
 [node name="Node3D5" type="Node3D" parent="." index="38" unique_id=260923910]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.221561, 1.0100162, 5.181009)

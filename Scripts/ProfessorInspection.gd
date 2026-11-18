@@ -33,6 +33,7 @@ func _ready() -> void:
 	result_timer.timeout.connect(_on_result_timeout)
 	knock_audio.global_position = get_node("../Room/DoorBody/Door").global_position + Vector3(0, 1.4, 0)
 	message_panel.visible = false
+	message_label.text = tr("INSPECTION_WARNING") % int(WARNING_SECONDS)
 	set_process(false)
 
 
@@ -76,7 +77,7 @@ func _update_warning_text() -> void:
 	var seconds_left := ceili(warning_timer.time_left)
 	if seconds_left != displayed_seconds:
 		displayed_seconds = seconds_left
-		message_label.text = "PROFESSOR APPROACHING - %d\nHide the USB in your belt!\nLook academically innocent.\nCaught = -3:00" % seconds_left
+		message_label.text = tr("INSPECTION_WARNING") % seconds_left
 
 
 func _on_warning_timeout() -> void:
@@ -94,10 +95,10 @@ func _on_warning_timeout() -> void:
 	knock_audio.play()
 	if usb_is_hidden:
 		message_label.modulate = Color(0.65, 1.0, 0.75)
-		message_label.text = "INSPECTION PASSED\nSuspiciously studious.\nYou may resume your research."
+		message_label.text = "INSPECTION_PASSED"
 	else:
 		message_label.modulate = Color(1.0, 0.65, 0.5)
-		message_label.text = "CAUGHT BORROWING!\n-3:00\nThe professor is keeping an eye on you."
+		message_label.text = "INSPECTION_CAUGHT"
 	result_timer.start(RESULT_SECONDS)
 
 

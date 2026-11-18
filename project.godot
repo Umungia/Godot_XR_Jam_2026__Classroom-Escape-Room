@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 XRToolsUserSettings="*uid://bqgb8i74tm0t"
 XRToolsRumbleManager="*uid://by853dk86g1qw"
+Localization="*res://Scripts/Localization.gd"
 
 [editor_plugins]
 
@@ -31,6 +32,11 @@ Cube="Group for our cubes"
 [godot_xr_tools]
 
 player/standard_height=1.6
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Localization/translations.en.translation", "res://Localization/translations.es.translation", "res://Localization/translations.eu.translation")
+locale/fallback="en"
 
 [rendering]
 
