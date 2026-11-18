@@ -2,9 +2,70 @@
 
 [ext_resource type="PackedScene" uid="uid://bnqnnnet4dw12" path="res://addons/godot-xr-tools/staging/staging.tscn" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cqq8613a8281q" path="res://ImageAssets/splash-hq.png" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bwn5yiu1k5512" path="res://Scripts/LanguageSelector.gd" id="3_language_selector"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_language_panel"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.015, 0.025, 0.04, 0.9)
+
+[sub_resource type="QuadMesh" id="QuadMesh_language_panel"]
+material = SubResource("StandardMaterial3D_language_panel")
+size = Vector2(9.4, 1.65)
 
 [node name="MainStaging" unique_id=1613797990 instance=ExtResource("1_0xm2m")]
 main_scene = "uid://dacofeauaygs2"
 
 [node name="LoadingScreen" parent="." index="2"]
 splash_screen = ExtResource("2_0xm2m")
+
+[node name="LanguageSelector" type="Node3D" parent="LoadingScreen/PressToContinue" index="1" unique_id=582323227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.4056202, 0.05000019)
+script = ExtResource("3_language_selector")
+
+[node name="Background" type="MeshInstance3D" parent="LoadingScreen/PressToContinue/LanguageSelector" index="0" unique_id=877092262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.02)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_language_panel")
+
+[node name="Basque" type="Label3D" parent="LoadingScreen/PressToContinue/LanguageSelector" index="1" unique_id=1962218946]
+auto_translate_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8, 0, 0)
+pixel_size = 0.008
+render_priority = 2
+outline_render_priority = 1
+text = "[ Euskara ]"
+font_size = 64
+outline_size = 8
+
+[node name="Spanish" type="Label3D" parent="LoadingScreen/PressToContinue/LanguageSelector" index="2" unique_id=1305794771]
+auto_translate_mode = 2
+pixel_size = 0.008
+render_priority = 2
+outline_render_priority = 1
+modulate = Color(0.5, 0.5, 0.5, 1)
+text = "Español"
+font_size = 64
+outline_size = 8
+
+[node name="English" type="Label3D" parent="LoadingScreen/PressToContinue/LanguageSelector" index="3" unique_id=1513550999]
+auto_translate_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0)
+pixel_size = 0.008
+render_priority = 2
+outline_render_priority = 1
+modulate = Color(0.5, 0.5, 0.5, 1)
+text = "English"
+font_size = 64
+outline_size = 8
+
+[node name="Instructions" type="Label3D" parent="LoadingScreen/PressToContinue/LanguageSelector" index="4" unique_id=2078434013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6, 0)
+auto_translate_mode = 2
+pixel_size = 0.008
+render_priority = 2
+outline_render_priority = 1
+text = "Move either thumbstick left / right"
+outline_size = 6
+
+[editable path="LoadingScreen"]
