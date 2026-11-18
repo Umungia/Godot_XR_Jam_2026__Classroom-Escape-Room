@@ -15,19 +15,19 @@
 [ext_resource type="PackedScene" uid="uid://cdb85mtga2q5f" path="res://stages/TestScene/cube.tscn" id="11_xmli6"]
 [ext_resource type="PackedScene" uid="uid://obh6clcuequj" path="res://stages/TestScene/table.tscn" id="13_m23fn"]
 [ext_resource type="PackedScene" uid="uid://7nnx0fa5tjf3" path="res://Scenes/ModularInverseMachine.tscn" id="13_xmli6"]
-[ext_resource type="PackedScene" uid="uid://c7j0c3r2r6uae" path="res://blenderAssets/murgilduLogo.glb" id="14_0n7nf"]
-[ext_resource type="PackedScene" uid="uid://bykyeht66g43y" path="res://blenderAssets/workstation.glb" id="14_l7gkf"]
+[ext_resource type="PackedScene" uid="uid://c7j0c3r2r6uae" path="res://Prefabs/murgilduLogo.glb" id="14_0n7nf"]
+[ext_resource type="PackedScene" uid="uid://bykyeht66g43y" path="res://Prefabs/workstation.glb" id="14_l7gkf"]
 [ext_resource type="PackedScene" uid="uid://h1vf8dcr0dv6" path="res://Scenes/Door_Timer.tscn" id="15_l7gkf"]
-[ext_resource type="PackedScene" uid="uid://3frbamofthbi" path="res://blenderAssets/desk_lamp.glb" id="16_cx0xt"]
+[ext_resource type="PackedScene" uid="uid://3frbamofthbi" path="res://Prefabs/desk_lamp.glb" id="16_cx0xt"]
 [ext_resource type="Script" uid="uid://bkl62kskvdp0m" path="res://Scripts/GameController.gd" id="17_47urw"]
-[ext_resource type="PackedScene" uid="uid://bary6o8hl630i" path="res://blenderAssets/mug.glb" id="17_jtlqu"]
-[ext_resource type="PackedScene" uid="uid://daq2hxtyoubxp" path="res://blenderAssets/paper_stack.glb" id="18_1tynk"]
-[ext_resource type="PackedScene" uid="uid://q1135e2upylx" path="res://blenderAssets/pencil_holder.glb" id="19_e2yog"]
-[ext_resource type="PackedScene" uid="uid://c5f581brd40pm" path="res://blenderAssets/professor_clipboard.glb" id="20_ar2pj"]
+[ext_resource type="PackedScene" uid="uid://bary6o8hl630i" path="res://Prefabs/mug.glb" id="17_jtlqu"]
+[ext_resource type="PackedScene" uid="uid://daq2hxtyoubxp" path="res://Prefabs/paper_stack.glb" id="18_1tynk"]
+[ext_resource type="PackedScene" uid="uid://q1135e2upylx" path="res://Prefabs/pencil_holder.glb" id="19_e2yog"]
+[ext_resource type="PackedScene" uid="uid://c5f581brd40pm" path="res://Prefabs/professor_clipboard.glb" id="20_ar2pj"]
 [ext_resource type="PackedScene" path="res://Scenes/FactorizationBlackboard.tscn" id="21_1tynk"]
 [ext_resource type="PackedScene" uid="uid://8aiqym3vpuc5" path="res://Scenes/FactorizationMachine.tscn" id="22_e2yog"]
 [ext_resource type="PackedScene" uid="uid://7er43md6vys0" path="res://Scenes/CalculatePhiMachine.tscn" id="23_e2yog"]
-[ext_resource type="PackedScene" uid="uid://sw82mgutjjg2" path="res://blenderAssets/machine_nameplate.glb" id="24_ar2pj"]
+[ext_resource type="PackedScene" uid="uid://sw82mgutjjg2" path="res://Prefabs/machine_nameplate.glb" id="24_ar2pj"]
 [ext_resource type="AudioStream" uid="uid://cnlbuuln2r72e" path="res://Audio/usb_stash_soft.wav" id="25_usb_stash"]
 [ext_resource type="PackedScene" path="res://Scenes/RSAClueBlackboardStand.tscn" id="26_clue_board"]
 [ext_resource type="Script" uid="uid://dxbf2hvewun6k" path="res://Prefabs/Fac_Clipboard.gd" id="26_p8fpf"]
@@ -1016,10 +1016,14 @@ font_size = 60
 outline_size = 19
 
 [node name="B)4" parent="." index="60" unique_id=2130598504 instance=ExtResource("47_atv2r")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -3.0390534)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.3589377, 1.0299544, -3.0390534)
+
+[node name="CollisionShape3D" parent="B)4/ButtonBase" parent_id_path=PackedInt32Array(2130598504, 488435069) index="0" unique_id=856071101]
+metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" parent="B)4/ButtonBase" parent_id_path=PackedInt32Array(2130598504, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
+metadata/_edit_group_ = true
 
 [node name="Label3D" type="Label3D" parent="B)4/Button" parent_id_path=PackedInt32Array(2130598504, 1307244194) index="2" unique_id=1624029109]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
@@ -1027,7 +1031,7 @@ text = "B)"
 font_size = 100
 
 [node name="A)4" parent="." index="61" unique_id=314953861 instance=ExtResource("47_atv2r")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -2.7075279)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.3589377, 1.0299544, -2.7075279)
 
 [node name="MeshInstance3D" parent="A)4/ButtonBase" parent_id_path=PackedInt32Array(314953861, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
@@ -1037,8 +1041,11 @@ transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09
 text = "A)"
 font_size = 100
 
+[node name="CollisionShape3D" parent="A)4/HandPoseArea" parent_id_path=PackedInt32Array(314953861, 780395054) index="0" unique_id=1649083926]
+metadata/_edit_group_ = true
+
 [node name="C)4" parent="." index="62" unique_id=512162722 instance=ExtResource("47_atv2r")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -3.3958893)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.3589377, 1.0299544, -3.3958893)
 
 [node name="MeshInstance3D" parent="C)4/ButtonBase" parent_id_path=PackedInt32Array(512162722, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null

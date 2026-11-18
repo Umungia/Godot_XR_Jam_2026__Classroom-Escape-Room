@@ -36,7 +36,6 @@ player/standard_height=1.6
 [internationalization]
 
 locale/translations=PackedStringArray("res://Localization/translations.en.translation", "res://Localization/translations.es.translation", "res://Localization/translations.eu.translation")
-locale/fallback="en"
 
 [rendering]
 
