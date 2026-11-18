@@ -1,6 +1,7 @@
 extends StaticBody3D
 
-const WRONG_ORDER_SOUND: AudioStream = preload("res://Audio/usb_wrong_order.wav")
+const CORRECT_ANSWER_SOUND: AudioStream = preload("res://Audio/usb_insert_exaggerated.wav")
+const WRONG_ANSWER_SOUND: AudioStream = preload("res://Audio/usb_wrong_order.wav")
 
 
 @onready var snap_zone: XRToolsSnapZone = $SnapZone
@@ -19,10 +20,9 @@ func _on_dropped():
 	pass
 
 
-func play_wrong_order_sound() -> void:
-	# XR Tools starts the normal docking sound before emitting has_picked_up.
-	# Reuse its spatial player so an invalid insertion only plays the error cue.
+func play_answer_sound(correct: bool) -> void:
+	# Reuse the dock's spatial player and let the latest answer replace its cue.
 	var audio_player: AudioStreamPlayer3D = $SnapZone/AudioStreamPlayer3D
 	audio_player.stop()
-	audio_player.stream = WRONG_ORDER_SOUND
+	audio_player.stream = CORRECT_ANSWER_SOUND if correct else WRONG_ANSWER_SOUND
 	audio_player.play()

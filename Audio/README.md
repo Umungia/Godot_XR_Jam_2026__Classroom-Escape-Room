@@ -1,13 +1,14 @@
 # Audio
 
-The original, procedurally synthesized USB effects play once at the USB's snap zone.
-Normal docking and storage use XR Tools' `stash_sound` property. On an incorrect-order insertion, `Screen.gd` replaces the docking sound on the same spatial audio player with the error cue.
+The original, procedurally synthesized USB effects provide answer feedback at all four machines. Machine docking is silent; the USB must still be inserted and prerequisite machines completed before answers are accepted. Player storage continues to use XR Tools' `stash_sound` property.
+
+Each accepted button press calls `Screen.gd`'s `play_answer_sound()` with the answer result. Every correct answer plays the success cue, including intermediate questions, and every wrong answer plays the error cue. The latest answer replaces any feedback still playing on the dock's spatial audio player. Buttons are ignored during the existing 0.5-second cooldown, after machine completion, and after the game ends. Wrong answers retain the existing question-reset behavior.
 
 | File | Duration | Use |
 | --- | --- | --- |
-| `usb_insert_exaggerated.wav` | 5 seconds | Machine docks: mechanical slide and latch, electronic startup, and connection chime. |
+| `usb_insert_exaggerated.wav` | 5 seconds | Correct-answer feedback at all four machines: mechanical slide and latch, electronic startup, and connection chime. |
 | `usb_stash_soft.wav` | 0.38 seconds | Player storage sphere: a quiet fabric brush and padded plastic tap when storing the USB. |
-| `usb_wrong_order.wav` | 0.60 seconds | Phi, modular inverse, and modular exponentiation docks: three gentle descending electronic notes when the previous step is missing. |
+| `usb_wrong_order.wav` | 0.60 seconds | Wrong-answer feedback at all four machines: three gentle descending electronic notes. |
 | `professor_dive_alarm.wav` | 12 seconds | Recorded WWII submarine dive klaxon, repeated through the professor inspection warning. |
 | `professor_door_knock.wav` | 1.2 seconds | Three hollow wooden knocks, played spatially at the classroom door when an inspection is resolved. |
 
@@ -48,7 +49,7 @@ game-over flow. Surviving results play the door knock and remain visible for
 10 seconds. A second inspection follows 45–75 seconds later, with a maximum
 of two inspections per run.
 
-Machine narration and docking audio are lowered by 12 dB during the warning and
+Machine narration and answer feedback are lowered by 12 dB during the warning and
 result, then restored. Winning or losing cancels the event, stops its sounds,
 hides its message, and restores the mix. Restarting resets the schedule.
 

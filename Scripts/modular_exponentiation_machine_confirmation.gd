@@ -28,23 +28,26 @@ func _ready() -> void:
 		button.button_pressed.connect(_on_button_pressed)
 
 func _on_button_pressed(button) -> void:
-	if not inserted or not can_press:
+	if not game_controller.is_playing() or not inserted or not can_press or not first_completion:
 		return
 	can_press = false
 	get_tree().create_timer(0.5).timeout.connect(func(): can_press = true)
 
 	var button_letter = button.get_parent().name
+	var correct_answer := false
 	if first_completion:
 		match numb:
 			1:
 				match phase:
 					Phase.Q1:
 						if button_letter == "A)4":
+							correct_answer = true
 							face_on.visible = false
 							face_on2.visible = true
 							phase = Phase.Q2
 					Phase.Q2:
 						if button_letter == "B)4":
+							correct_answer = true
 							face_on2.visible = false
 							face_on3.visible = true
 							phase = Phase.Q3
@@ -55,6 +58,7 @@ func _on_button_pressed(button) -> void:
 							face_on3.visible = false
 					Phase.Q3:
 						if button_letter == "B)4":
+							correct_answer = true
 							face.visible = true
 							face_on3.visible = false
 							phase = Phase.DONE
@@ -68,11 +72,13 @@ func _on_button_pressed(button) -> void:
 				match phase:
 					Phase.Q1:
 						if button_letter == "B)4":
+							correct_answer = true
 							face_on.visible = false
 							face_on2.visible = true
 							phase = Phase.Q2
 					Phase.Q2:
 						if button_letter == "C)4":
+							correct_answer = true
 							face_on2.visible = false
 							face_on3.visible = true
 							phase = Phase.Q3
@@ -83,6 +89,7 @@ func _on_button_pressed(button) -> void:
 							face_on3.visible = false
 					Phase.Q3:
 						if button_letter == "B)4":
+							correct_answer = true
 							face.visible = true
 							face_on3.visible = false
 							phase = Phase.DONE
@@ -96,11 +103,13 @@ func _on_button_pressed(button) -> void:
 				match phase:
 					Phase.Q1:
 						if button_letter == "C)4":
+							correct_answer = true
 							face_on.visible = false
 							face_on2.visible = true
 							phase = Phase.Q2
 					Phase.Q2:
 						if button_letter == "A)4":
+							correct_answer = true
 							face_on2.visible = false
 							face_on3.visible = true
 							phase = Phase.Q3
@@ -111,6 +120,7 @@ func _on_button_pressed(button) -> void:
 							face_on3.visible = false
 					Phase.Q3:
 						if button_letter == "B)4":
+							correct_answer = true
 							face.visible = true
 							face_on3.visible = false
 							phase = Phase.DONE
@@ -120,6 +130,8 @@ func _on_button_pressed(button) -> void:
 							face_on.visible = true
 							face_on2.visible = false
 							face_on3.visible = false
+
+	$SnapTree.play_answer_sound(correct_answer)
 
 func _complete() -> void:
 	if not first_completion:
@@ -134,7 +146,6 @@ func _on_snap_tree_picked_up(_what) -> void:
 	if not game_controller.is_playing():
 		return
 	if not ModInvMachine.isDone:
-		$SnapTree.play_wrong_order_sound()
 		return
 	inserted = true
 	if first_completion:

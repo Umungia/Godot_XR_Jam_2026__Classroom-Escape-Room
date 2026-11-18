@@ -15,19 +15,19 @@
 [ext_resource type="PackedScene" uid="uid://cdb85mtga2q5f" path="res://stages/TestScene/cube.tscn" id="11_xmli6"]
 [ext_resource type="PackedScene" uid="uid://obh6clcuequj" path="res://stages/TestScene/table.tscn" id="13_m23fn"]
 [ext_resource type="PackedScene" uid="uid://7nnx0fa5tjf3" path="res://Scenes/ModularInverseMachine.tscn" id="13_xmli6"]
-[ext_resource type="PackedScene" uid="uid://c7j0c3r2r6uae" path="res://Prefabs/murgilduLogo.glb" id="14_0n7nf"]
-[ext_resource type="PackedScene" uid="uid://bykyeht66g43y" path="res://Prefabs/workstation.glb" id="14_l7gkf"]
+[ext_resource type="PackedScene" uid="uid://c7j0c3r2r6uae" path="res://blenderAssets/murgilduLogo.glb" id="14_0n7nf"]
+[ext_resource type="PackedScene" uid="uid://bykyeht66g43y" path="res://blenderAssets/workstation.glb" id="14_l7gkf"]
 [ext_resource type="PackedScene" uid="uid://h1vf8dcr0dv6" path="res://Scenes/Door_Timer.tscn" id="15_l7gkf"]
-[ext_resource type="PackedScene" uid="uid://3frbamofthbi" path="res://Prefabs/desk_lamp.glb" id="16_cx0xt"]
+[ext_resource type="PackedScene" uid="uid://3frbamofthbi" path="res://blenderAssets/desk_lamp.glb" id="16_cx0xt"]
 [ext_resource type="Script" uid="uid://bkl62kskvdp0m" path="res://Scripts/GameController.gd" id="17_47urw"]
-[ext_resource type="PackedScene" uid="uid://bary6o8hl630i" path="res://Prefabs/mug.glb" id="17_jtlqu"]
-[ext_resource type="PackedScene" uid="uid://daq2hxtyoubxp" path="res://Prefabs/paper_stack.glb" id="18_1tynk"]
-[ext_resource type="PackedScene" uid="uid://q1135e2upylx" path="res://Prefabs/pencil_holder.glb" id="19_e2yog"]
-[ext_resource type="PackedScene" uid="uid://c5f581brd40pm" path="res://Prefabs/professor_clipboard.glb" id="20_ar2pj"]
+[ext_resource type="PackedScene" uid="uid://bary6o8hl630i" path="res://blenderAssets/mug.glb" id="17_jtlqu"]
+[ext_resource type="PackedScene" uid="uid://daq2hxtyoubxp" path="res://blenderAssets/paper_stack.glb" id="18_1tynk"]
+[ext_resource type="PackedScene" uid="uid://q1135e2upylx" path="res://blenderAssets/pencil_holder.glb" id="19_e2yog"]
+[ext_resource type="PackedScene" uid="uid://c5f581brd40pm" path="res://blenderAssets/professor_clipboard.glb" id="20_ar2pj"]
 [ext_resource type="PackedScene" path="res://Scenes/FactorizationBlackboard.tscn" id="21_1tynk"]
 [ext_resource type="PackedScene" uid="uid://8aiqym3vpuc5" path="res://Scenes/FactorizationMachine.tscn" id="22_e2yog"]
 [ext_resource type="PackedScene" uid="uid://7er43md6vys0" path="res://Scenes/CalculatePhiMachine.tscn" id="23_e2yog"]
-[ext_resource type="PackedScene" uid="uid://sw82mgutjjg2" path="res://Prefabs/machine_nameplate.glb" id="24_ar2pj"]
+[ext_resource type="PackedScene" uid="uid://sw82mgutjjg2" path="res://blenderAssets/machine_nameplate.glb" id="24_ar2pj"]
 [ext_resource type="AudioStream" uid="uid://cnlbuuln2r72e" path="res://Audio/usb_stash_soft.wav" id="25_usb_stash"]
 [ext_resource type="PackedScene" path="res://Scenes/RSAClueBlackboardStand.tscn" id="26_clue_board"]
 [ext_resource type="Script" uid="uid://dxbf2hvewun6k" path="res://Prefabs/Fac_Clipboard.gd" id="26_p8fpf"]
@@ -356,7 +356,7 @@ hand_skeleton = NodePath("LeftHand/Hand_Nails_L/Armature/Skeleton3D")
 [node name="Hand_Nails_L" parent="XROrigin3D/LeftHand/XRToolsCollisionHand/LeftHand" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, -0.01, 0.03535534, 0.03535534)
 
-[node name="Skeleton3D" parent="XROrigin3D/LeftHand/XRToolsCollisionHand/LeftHand/Hand_Nails_L/Armature" index="0" unique_id=1596956654]
+[node name="Skeleton3D" parent="XROrigin3D/LeftHand/XRToolsCollisionHand/LeftHand/Hand_Nails_L/Armature" index="0" unique_id=41342003]
 bones/1/rotation = Quaternion(0.32353696, -2.5657986e-05, -0.027220424, 0.9458239)
 bones/2/rotation = Quaternion(-0.04595032, -0.027135657, -0.07525719, 0.99573517)
 bones/3/rotation = Quaternion(0.055640664, 0.010326136, 0.013984742, 0.99829954)
@@ -400,7 +400,7 @@ hand_skeleton = NodePath("RightHand/Hand_Nails_R/Armature/Skeleton3D")
 [node name="Hand_Nails_R" parent="XROrigin3D/RightHand/XRToolsCollisionHand/RightHand" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.01, 0.03535534, 0.03535534)
 
-[node name="Skeleton3D" parent="XROrigin3D/RightHand/XRToolsCollisionHand/RightHand/Hand_Nails_R/Armature" index="0" unique_id=1440692769]
+[node name="Skeleton3D" parent="XROrigin3D/RightHand/XRToolsCollisionHand/RightHand/Hand_Nails_R/Armature" index="0" unique_id=1427345927]
 bones/1/rotation = Quaternion(0.323537, 2.5658142e-05, 0.027220426, 0.9458239)
 bones/2/rotation = Quaternion(-0.09044407, 0.04151748, 0.16629349, 0.98104167)
 bones/3/rotation = Quaternion(-0.04661986, -0.020970985, -0.010327632, 0.9986392)
@@ -595,7 +595,7 @@ c) 1003643"
 font_size = 65
 outline_size = 19
 
-[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D3/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(1996047347, 1783458438, 28555298, 587032292) index="5" unique_id=946452680]
+[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D3/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(1996047347, 1783458438, 28555298, 1755856747) index="5" unique_id=946452680]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_gogcg")
@@ -625,7 +625,7 @@ b) 1009
 c) 997"
 font_size = 76
 
-[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D4/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(99679489, 1783458438, 28555298, 587032292) index="5" unique_id=1316176351]
+[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D4/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(99679489, 1783458438, 28555298, 1755856747) index="5" unique_id=1316176351]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -639,7 +639,7 @@ b) 1021
 c) 971"
 font_size = 80
 
-[node name="instruction_faceOn3" type="MeshInstance3D" parent="Node3D4/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(99679489, 1783458438, 28555298, 587032292) index="6" unique_id=1049158105]
+[node name="instruction_faceOn3" type="MeshInstance3D" parent="Node3D4/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(99679489, 1783458438, 28555298, 1755856747) index="6" unique_id=1049158105]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -700,7 +700,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.063, 0, -2.513)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="MeshInstance3D" parent="ModularExponentiationStation/Table/StaticBody3D" index="1" unique_id=976085782]
-transform = Transform3D(2.9135911, 0, 0, 0, 1, 0, 0, 0, 1, -0.49187946, 0, 0)
+transform = Transform3D(2.9135911, 0, 0, 0, 1, 0, 0, 0, 1, 0.019564152, 0, 0)
 
 [node name="Machine" parent="ModularExponentiationStation" index="2"]
 visible = false
@@ -717,7 +717,7 @@ script = ExtResource("34_p7sn1")
 [node name="SnapZone" parent="Node3D5/SnapTree" index="2" unique_id=1949691327]
 transform = Transform3D(-0.010149706, 0, 0.9999485, 0, 1, 0, -0.9999485, 0, -0.010149706, 0.2978387, 0.28287137, -1.9073486e-06)
 
-[node name="instruction_face" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 587032292) index="2" unique_id=961326426]
+[node name="instruction_face" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 1755856747) index="2" unique_id=1304799058]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0004184246, 0.19999999, 0.017999649)
 
 [node name="Label3D" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel/instruction_faceOn" parent_id_path=PackedInt32Array(273482567, 28555298, 1468759084) index="0" unique_id=716625478]
@@ -727,10 +727,10 @@ a) 966120
 b) 1020096
 c) 1001640"
 
-[node name="instruction_housing" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 587032292) index="4" unique_id=798048313]
+[node name="instruction_housing" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 1755856747) index="4" unique_id=1646014481]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0004184246, 0.19999999, 0)
 
-[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 587032292) index="5" unique_id=767854366]
+[node name="instruction_faceOn2" type="MeshInstance3D" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 1755856747) index="5" unique_id=767854366]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -744,7 +744,7 @@ b) 17
 c) 19"
 font_size = 74
 
-[node name="instruction_faceOn3" type="MeshInstance3D" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 587032292) index="6" unique_id=1155903561]
+[node name="instruction_faceOn3" type="MeshInstance3D" parent="Node3D5/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(273482567, 28555298, 1755856747) index="6" unique_id=1155903561]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -772,7 +772,7 @@ a) 398724
 b) 258494
 c) 442283"
 
-[node name="instruction_faceOn2" type="MeshInstance3D" parent="ModularExponentiationMachine/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(522997033, 1430199985, 28555298, 587032292) index="5" unique_id=52169116]
+[node name="instruction_faceOn2" type="MeshInstance3D" parent="ModularExponentiationMachine/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(522997033, 1430199985, 28555298, 1755856747) index="5" unique_id=52169116]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -786,7 +786,7 @@ b) 180017
 c) 355939"
 font_size = 74
 
-[node name="instruction_faceOn3" type="MeshInstance3D" parent="ModularExponentiationMachine/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(522997033, 1430199985, 28555298, 587032292) index="6" unique_id=1394966545]
+[node name="instruction_faceOn3" type="MeshInstance3D" parent="ModularExponentiationMachine/SnapTree/instruction_panel2/instruction_panel" parent_id_path=PackedInt32Array(522997033, 1430199985, 28555298, 1755856747) index="6" unique_id=1394966545]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.018)
 visible = false
 material_override = SubResource("StandardMaterial3D_qy60a")
@@ -871,10 +871,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6838251, 0.73, 0.009)
 [node name="C)" parent="." index="47" unique_id=280295654 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, 3.5011477)
 
-[node name="MeshInstance3D" parent="C)/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="C)/ButtonBase" parent_id_path=PackedInt32Array(280295654, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="C)/Button" index="2" unique_id=2085877999]
+[node name="Label3D" type="Label3D" parent="C)/Button" parent_id_path=PackedInt32Array(280295654, 1307244194) index="2" unique_id=2085877999]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "C)"
 font_size = 100
@@ -882,10 +882,10 @@ font_size = 100
 [node name="B)" parent="." index="48" unique_id=970934056 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, 3.9090972)
 
-[node name="MeshInstance3D" parent="B)/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="B)/ButtonBase" parent_id_path=PackedInt32Array(970934056, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="B)/Button" index="2" unique_id=905790674]
+[node name="Label3D" type="Label3D" parent="B)/Button" parent_id_path=PackedInt32Array(970934056, 1307244194) index="2" unique_id=905790674]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "B)"
 font_size = 100
@@ -893,10 +893,10 @@ font_size = 100
 [node name="A)" parent="." index="49" unique_id=1384473327 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, 4.330699)
 
-[node name="MeshInstance3D" parent="A)/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="A)/ButtonBase" parent_id_path=PackedInt32Array(1384473327, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="A)/Button" index="2" unique_id=1390360368]
+[node name="Label3D" type="Label3D" parent="A)/Button" parent_id_path=PackedInt32Array(1384473327, 1307244194) index="2" unique_id=1390360368]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "A)"
 font_size = 100
@@ -907,10 +907,10 @@ script = ExtResource("48_qy60a")
 [node name="C)2" parent="." index="51" unique_id=1932885633 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 1.0748264, 0.9631448, -4.282802)
 
-[node name="MeshInstance3D" parent="C)2/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="C)2/ButtonBase" parent_id_path=PackedInt32Array(1932885633, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="C)2/Button" index="2" unique_id=1247993562]
+[node name="Label3D" type="Label3D" parent="C)2/Button" parent_id_path=PackedInt32Array(1932885633, 1307244194) index="2" unique_id=1247993562]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "C)"
 font_size = 100
@@ -918,10 +918,10 @@ font_size = 100
 [node name="B)2" parent="." index="52" unique_id=451594673 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0.6953075, 0.9631448, -4.282802)
 
-[node name="MeshInstance3D" parent="B)2/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="B)2/ButtonBase" parent_id_path=PackedInt32Array(451594673, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="B)2/Button" index="2" unique_id=264242290]
+[node name="Label3D" type="Label3D" parent="B)2/Button" parent_id_path=PackedInt32Array(451594673, 1307244194) index="2" unique_id=264242290]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "B)"
 font_size = 100
@@ -929,10 +929,10 @@ font_size = 100
 [node name="A)2" parent="." index="53" unique_id=1249112718 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0.35190108, 0.9631448, -4.282802)
 
-[node name="MeshInstance3D" parent="A)2/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="A)2/ButtonBase" parent_id_path=PackedInt32Array(1249112718, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="A)2/Button" index="2" unique_id=1991549331]
+[node name="Label3D" type="Label3D" parent="A)2/Button" parent_id_path=PackedInt32Array(1249112718, 1307244194) index="2" unique_id=1991549331]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "A)"
 font_size = 100
@@ -962,10 +962,10 @@ outline_size = 19
 [node name="C)3" parent="." index="55" unique_id=617633856 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 6.3818216, 1.0282315, 5.5707645)
 
-[node name="MeshInstance3D" parent="C)3/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="C)3/ButtonBase" parent_id_path=PackedInt32Array(617633856, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="C)3/Button" index="2" unique_id=2066442781]
+[node name="Label3D" type="Label3D" parent="C)3/Button" parent_id_path=PackedInt32Array(617633856, 1307244194) index="2" unique_id=2066442781]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "C)"
 font_size = 100
@@ -973,10 +973,10 @@ font_size = 100
 [node name="B)3" parent="." index="56" unique_id=60021550 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 6.3818216, 1.0282315, 5.236795)
 
-[node name="MeshInstance3D" parent="B)3/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="B)3/ButtonBase" parent_id_path=PackedInt32Array(60021550, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="B)3/Button" index="2" unique_id=676689627]
+[node name="Label3D" type="Label3D" parent="B)3/Button" parent_id_path=PackedInt32Array(60021550, 1307244194) index="2" unique_id=676689627]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "B)"
 font_size = 100
@@ -984,10 +984,10 @@ font_size = 100
 [node name="A)3" parent="." index="57" unique_id=1483338546 instance=ExtResource("47_atv2r")]
 transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 6.3818216, 1.0282315, 4.8502727)
 
-[node name="MeshInstance3D" parent="A)3/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="A)3/ButtonBase" parent_id_path=PackedInt32Array(1483338546, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="A)3/Button" index="2" unique_id=693321478]
+[node name="Label3D" type="Label3D" parent="A)3/Button" parent_id_path=PackedInt32Array(1483338546, 1307244194) index="2" unique_id=693321478]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "A)"
 font_size = 100
@@ -1043,10 +1043,10 @@ outline_size = 19
 [node name="B)4" parent="." index="60" unique_id=2130598504 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -3.0390534)
 
-[node name="MeshInstance3D" parent="B)4/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="B)4/ButtonBase" parent_id_path=PackedInt32Array(2130598504, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="B)4/Button" index="2" unique_id=1624029109]
+[node name="Label3D" type="Label3D" parent="B)4/Button" parent_id_path=PackedInt32Array(2130598504, 1307244194) index="2" unique_id=1624029109]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "B)"
 font_size = 100
@@ -1054,10 +1054,10 @@ font_size = 100
 [node name="A)4" parent="." index="61" unique_id=314953861 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -2.7075279)
 
-[node name="MeshInstance3D" parent="A)4/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="A)4/ButtonBase" parent_id_path=PackedInt32Array(314953861, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="A)4/Button" index="2" unique_id=1154847297]
+[node name="Label3D" type="Label3D" parent="A)4/Button" parent_id_path=PackedInt32Array(314953861, 1307244194) index="2" unique_id=1154847297]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "A)"
 font_size = 100
@@ -1065,10 +1065,10 @@ font_size = 100
 [node name="C)4" parent="." index="62" unique_id=512162722 instance=ExtResource("47_atv2r")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.4771204, 1.0299544, -3.3958893)
 
-[node name="MeshInstance3D" parent="C)4/ButtonBase" index="1"]
+[node name="MeshInstance3D" parent="C)4/ButtonBase" parent_id_path=PackedInt32Array(512162722, 488435069) index="1" unique_id=1423071381]
 surface_material_override/0 = null
 
-[node name="Label3D" type="Label3D" parent="C)4/Button" index="2" unique_id=1845774782]
+[node name="Label3D" type="Label3D" parent="C)4/Button" parent_id_path=PackedInt32Array(512162722, 1307244194) index="2" unique_id=1845774782]
 transform = Transform3D(-2.1855695e-09, -0.05, -2.1855695e-09, 0, -2.1855695e-09, 0.05, -0.05, 2.1855695e-09, 9.553427e-17, 0, 0.020065486, 0)
 text = "C)"
 font_size = 100
