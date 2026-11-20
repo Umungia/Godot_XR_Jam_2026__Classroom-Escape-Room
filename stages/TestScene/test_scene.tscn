@@ -315,7 +315,7 @@ font_size = 44
 outline_size = 4
 
 [node name="InspectionMessage" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D" index="2" unique_id=1285626280]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, -1.6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17763972, -1.6)
 visible = false
 cast_shadow = 0
 mesh = SubResource("QuadMesh_inspection")
