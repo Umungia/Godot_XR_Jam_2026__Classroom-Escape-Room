@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="VR demo"
+config/name="Classroom_escape_room_1"
 run/main_scene="uid://7wsd308q3y50"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -37,10 +37,14 @@ player/standard_height=1.6
 
 locale/translations=PackedStringArray("res://Localization/translations.en.translation", "res://Localization/translations.es.translation", "res://Localization/translations.eu.translation")
 
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
+renderer/rendering_method="mobile"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 anti_aliasing/quality/use_debanding=true

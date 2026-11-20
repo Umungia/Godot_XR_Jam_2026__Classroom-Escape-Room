@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dswdm412v0t8n"
-path="res://.godot/imported/factorization.png-881e27136808f7810ccce482499c2aad.ctex"
+uid="uid://cm45bdfjr7pa0"
+path="res://.godot/imported/modular_exponentiation.jpg-8813e0044e4212b233e0446f626d079d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ImageAssets/MachineBlackboards/factorization.png"
-dest_files=["res://.godot/imported/factorization.png-881e27136808f7810ccce482499c2aad.ctex"]
+source_file="res://ImageAssets/MachineBlackboards/modular_exponentiation.jpg"
+dest_files=["res://.godot/imported/modular_exponentiation.jpg-8813e0044e4212b233e0446f626d079d.ctex"]
 
 [params]
 

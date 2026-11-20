@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cslgxvo7uqrks"
-path="res://.godot/imported/modular_inverse.png-2d1ff8707ed586aaa18260dfd6982619.ctex"
+uid="uid://dsx5difeexy24"
+path="res://.godot/imported/factorization.jpg-8d1364ba92043c47f720b61fcec3a244.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ImageAssets/MachineBlackboards/modular_inverse.png"
-dest_files=["res://.godot/imported/modular_inverse.png-2d1ff8707ed586aaa18260dfd6982619.ctex"]
+source_file="res://ImageAssets/MachineBlackboards/factorization.jpg"
+dest_files=["res://.godot/imported/factorization.jpg-8d1364ba92043c47f720b61fcec3a244.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxx620rxhw5d6"
-path="res://.godot/imported/phi.png-263f2090b283a285eea8ba1875480c12.ctex"
+uid="uid://c2r7g1jhw7gbc"
+path="res://.godot/imported/modular_inverse.jpg-802ee6ef30bbc5a5b4a7ca23c01cd9cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ImageAssets/MachineBlackboards/phi.png"
-dest_files=["res://.godot/imported/phi.png-263f2090b283a285eea8ba1875480c12.ctex"]
+source_file="res://ImageAssets/MachineBlackboards/modular_inverse.jpg"
+dest_files=["res://.godot/imported/modular_inverse.jpg-802ee6ef30bbc5a5b4a7ca23c01cd9cf.ctex"]
 
 [params]
 

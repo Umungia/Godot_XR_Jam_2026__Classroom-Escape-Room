@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3]
 
 [ext_resource type="PackedScene" path="res://Prefabs/rsa_blackboard.glb" id="1_frame"]
-[ext_resource type="Texture2D" path="res://ImageAssets/rsa_clue_blackboard.png" id="2_artwork"]
+[ext_resource type="Texture2D" path="res://ImageAssets/rsa_clue_blackboard.jpg" id="2_artwork"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_chalk"]
 shading_mode = 0
